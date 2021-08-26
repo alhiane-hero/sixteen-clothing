@@ -1,0 +1,141 @@
+/* start banner section */
+
+.banner {
+
+    height: 50vh;
+
+    background: url( ../images/products-heading.jpg ) center center no-repeat;
+
+    background-size: cover;
+
+}
+
+.banner .content-box {
+
+    height: 50vh;
+
+}
+
+/* start banner section */
+
+/* start latest-products section */
+
+.latest-products input {
+
+    display: none;
+
+}
+
+.latest-products .top-list {
+
+    display: block;
+
+}
+
+.latest-products .top-list ul {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+.latest-products .top-list ul li:not( :last-of-type ) {
+
+    margin-right: 25px;
+
+}
+
+.latest-products .top-list ul li label {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    color: var( --paragraph-color );
+
+    cursor: pointer;
+
+}
+
+.latest-products input#link1:checked ~ .top-list ul li:first-of-type label,
+.latest-products input#link2:checked ~ .top-list ul li:nth-of-type( 2 ) label,
+.latest-products input#link3:checked ~ .top-list ul li:nth-of-type( 3 ) label,
+.latest-products input#link4:checked ~ .top-list ul li:last-of-type label {
+
+    color: var( --main-color );
+
+}
+
+.latest-products .card {
+
+    display: none;
+
+}
+
+.latest-products input#link1:checked ~ .row .card,
+.latest-products input#link2:checked ~ .row .featured-target,
+.latest-products input#link3:checked ~ .row .flash-deals-target,
+.latest-products input#link4:checked ~ .row .last-minute-target {
+
+    display: initial;
+
+}
+
+.latest-products .pages {
+
+    margin-top: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.latest-products .pages li:not( :last-of-type ) {
+
+    margin-right: 20px;
+
+}
+
+.latest-products .pages li a {
+
+    display: block;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: 1px solid #eee;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: var( --paragraph-color );
+
+    transition: background-color var( --transition-duration ) linear,
+                color var( --transition-duration ) linear;
+
+}
+
+.latest-products .pages li a.active,
+.latest-products .pages li a:hover {
+
+    background-color: var( --main-color );
+
+    color: var( --white-color );
+
+}
+
+/* end latest-products section */

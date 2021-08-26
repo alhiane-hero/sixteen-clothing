@@ -1,0 +1,293 @@
+/* start banner section */
+
+.banner {
+
+    background: url( ../images/about-heading.jpg ) center top no-repeat;
+
+}
+
+/* end banner section */
+
+/* start best-features section */
+
+.best-features {
+
+    padding-top: var( --section-padding );
+
+}
+
+.best-features .img-box {
+
+    margin-top: 0 !important;
+
+    margin-bottom: 50px;
+
+}
+
+.best-features p:first-of-type  {
+
+    margin-bottom: 15px;
+
+}
+
+.best-features p:last-of-type {
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+.best-features ul,
+.latest-products .card .card-head .overlay ul {
+
+    display: flex;
+
+}
+
+.best-features ul li:not( :last-of-type ),
+.latest-products .card .card-head .overlay ul li:not( :last-of-type ) {
+
+    margin-right: 20px;
+
+}
+
+.latest-products .card .card-head .overlay ul li::before,
+.best-features ul li::before {
+
+    display: none;
+
+}
+
+.latest-products .card .card-head .overlay ul li a,
+.best-features ul li a {
+
+    display: block;
+
+    width: 50px;
+
+    height: 50px;
+
+    padding-left: 0 !important;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #eee;
+
+    transition: background-color var( --transition-duration ) linear !important;
+
+}
+
+.latest-products .card .card-head .overlay ul li a i,
+.best-features ul li a i {
+
+    font-size: 17px;
+
+    color: var( --paragraph-color );
+
+    transition: color var( --transition-duration ) linear;
+
+}
+
+.best-features ul li a:hover {
+
+    background-color: var( --main-color );
+
+}
+
+
+.best-features ul li a:hover i {
+
+    color: var( --white-color );
+
+}
+
+/* end best-features section */
+
+/* start latest-products section */
+
+.latest-products {
+
+    padding-top: 0 !important;
+
+}
+
+.latest-products .card {
+
+    display: initial;
+
+}
+
+.latest-products .card .card-head {
+
+    position: relative;
+
+}
+
+.latest-products .card .card-head .overlay {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba( 243, 63, 63, .8 );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    transition: opacity var( --transition-duration ) linear;
+
+}
+
+.latest-products .card .card-head .overlay ul li a:hover i {
+
+    color: var( --main-color );
+
+}
+
+.latest-products .card .card-head:hover .overlay {
+
+    opacity: 1;
+
+}
+
+.latest-products .card .card-body .top {
+
+    flex-direction: column;
+
+}
+
+.latest-products .card .card-body .top span {
+
+    font-size: 14px;
+
+    color: var( --main-color );
+
+    margin-top: 4px;
+
+}
+
+.latest-products .card .card-body p {
+
+    margin: 15px 0 0;
+
+}
+
+/* end latest-products section */
+
+/* start services section */
+
+.services {
+
+    padding-top: var( --section-padding );
+
+    padding-bottom: var( --section-padding );
+
+    background: url( ../images/services-bg.jpg ) center center no-repeat;
+
+    background-size: cover;
+
+}
+
+.services .row {
+
+    display: grid;
+
+    grid-template-columns: repeat( auto-fill, minmax( 280px, 1fr ) );
+
+    grid-gap: 30px;
+
+}
+
+.services .card .card-head {
+
+    padding: 40px;
+    
+    background-color: #f7f7f7;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.services .card .card-head i {
+
+    width: 100px;
+
+    height: 100px;
+
+    background-color: var( --main-color );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 32px;
+
+    color: var( --white-color );
+
+}
+
+.services .card .card-body {
+
+    padding: 40px;
+
+    background-color: var( --white-color );
+
+}
+
+.services .card .card-body h3 {
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #1a6692;
+
+}
+
+.services .card .card-body p {
+
+    margin: 20px 0 30px;
+
+}
+
+/* end services section */
+
+/* start happy-clients section */
+
+.happy-clients {
+
+    padding-top: var( --section-padding );
+
+    padding-bottom: var( --section-padding );
+
+}
+
+.happy-clients .row {
+
+    display: grid;
+
+    grid-template-columns: repeat( auto-fill, minmax( 150px, 1fr ) );
+
+    grid-gap: 30px;
+
+}
+
+/* end happy-clients section */

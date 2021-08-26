@@ -1,0 +1,140 @@
+/* start banner section */
+
+.banner {
+
+    background: url( ../images/contact-heading.jpg ) center top no-repeat;
+
+}
+
+/* end banner section */
+
+
+/* start send-message section */
+
+.send-message .row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+@media ( max-width: 768px ) {
+
+    .send-message .row {
+
+        flex-direction: column;
+
+    }
+    
+}
+
+.send-message form,
+.send-message .accordion {
+
+    flex-basis: calc( 50% - 15px );
+
+}
+
+.send-message form input,
+.send-message form textarea {
+
+    width: 100%;
+
+    padding: 10px 15px;
+
+    border: 1px solid #eee;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+
+    color: var( --paragraph-color );
+
+    outline: none;
+
+}
+
+.send-message form textarea {
+
+    height: 150px;
+
+    resize: none;
+
+}
+
+.send-message form input[ type = "submit" ] {
+
+    width: fit-content;
+
+    color: var( --white-color );
+
+    cursor: pointer;
+
+}
+
+.send-message .accordion input[ type = "radio" ] {
+
+    display: none;
+
+}
+
+.send-message .accordion ul li {
+
+    padding: 20px 0;
+
+    border-top: 1px solid #eee;
+
+    overflow: hidden;
+
+    height: 55px;
+
+}
+
+.send-message .accordion ul li:last-of-type {
+
+    border-bottom: 1px solid #eee;
+
+}
+
+.send-message .accordion ul li label {
+
+    display: block;
+
+    font-size: 18px;
+
+    color: #1a6692;
+
+    padding-bottom: 15px;
+
+    cursor: pointer;
+
+}
+
+.send-message .accordion ul li p:first-of-type {
+
+    margin-bottom: 15px;
+
+}
+
+.send-message .accordion input#accordion-btn-1:checked ~ ul li:first-of-type label,
+.send-message .accordion input#accordion-btn-2:checked ~ ul li:nth-of-type( 2 ) label,
+.send-message .accordion input#accordion-btn-3:checked ~ ul li:nth-of-type( 3 ) label,
+.send-message .accordion input#accordion-btn-4:checked ~ ul li:last-of-type label {
+
+    color: var( --main-color );
+
+}
+
+.send-message .accordion input#accordion-btn-1:checked ~ ul li:first-of-type,
+.send-message .accordion input#accordion-btn-2:checked ~ ul li:nth-of-type( 2 ),
+.send-message .accordion input#accordion-btn-3:checked ~ ul li:nth-of-type( 3 ),
+.send-message .accordion input#accordion-btn-4:checked ~ ul li:last-of-type {
+
+    height: 100%;
+
+    transition: .5s;
+
+}
+  
+/* end send-message section */
